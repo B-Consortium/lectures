@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="pub-id" version="3.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:title>B-Consortium's Physics
+</dc:title>
+    <dc:language>en</dc:language>
+    <meta property="dcterms:modified">2022-12-28T12:10:52Z</meta>
+    <dc:identifier id="pub-id">urn:uuid:ac430ac4-86a8-11ed-addd-9fbdfbb2e44f</dc:identifier>
+  </metadata>
+  <manifest>
+    <item id="nav" href="nav.xhtml" properties="nav" media-type="application/xhtml+xml"/>
+    <item id="_main.xhtml" href="main.xhtml" media-type="application/xhtml+xml" properties="mathml"/>
+    <item id="_LaTeXML.css" href="LaTeXML.css" media-type="text/css"/>
+    <item id="_ltx-book.css" href="ltx-book.css" media-type="text/css"/>
+    <item id="_ltx-listings.css" href="ltx-listings.css" media-type="text/css"/>
+  </manifest>
+  <spine>
+    <itemref idref="_main.xhtml"/>
+  </spine>
+</package>
