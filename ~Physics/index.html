@@ -41,7 +41,7 @@
                     <p class="ltx_p">Copyright, 2022</p>
                     <p class="ltx_p"><span class="ltx_text ltx_font_smallcaps">by</span></p>
                     <p class="ltx_p"><span class="ltx_text ltx_font_smallcaps">Aitzaz Imtiaz</span></p>
-                    <p class="ltx_p">PRESENTED TO YOU </p>
+                    <p class="ltx_p">Founder of B-Consortium</p>
                 </div>
                 <div class="ltx_pagination ltx_role_newpage"></div>
                 <div class="ltx_pagination ltx_role_newpage"></div>
@@ -55,5 +55,37 @@
             </article>
         </div>
     </div>
+    <h2>Table of Contents</h2>
+    All the best for your course! Hearts from B-Consortium.
+    <ul id="toc-list"></ul>
+
+    <script>
+        // Define the list of chapters with titles and filenames
+        const chapters = [
+            { title: "Introduction", filename: "chapter1.html" },
+            { title: "Forces", filename: "chapter2.html" },
+            { title: "Energy", filename: "chapter3.html" },
+            // Add more chapters as needed
+        ];
+
+        // Function to generate the TOC list
+        function generateTOC() {
+            const tocList = document.getElementById("toc-list");
+
+            chapters.forEach((chapter, index) => {
+                const listItem = document.createElement("li");
+                const link = document.createElement("a");
+                link.href = chapter.filename;
+                link.textContent = `Chapter ${index + 1}: ${chapter.title}`;
+
+                listItem.appendChild(link);
+                tocList.appendChild(listItem);
+            });
+        }
+
+        // Call the function to generate the TOC
+        generateTOC();
+    </script>
+    
 </body>
 </html>
