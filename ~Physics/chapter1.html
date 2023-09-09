@@ -100,6 +100,14 @@ Here, we recognize that such domains can produce the range of following errors i
 </table>    
     Based on these definitions, we can set for a random experiment, a graph that crucially shows the difference between Random and System errors on graph plot:
     <img src="errors.png" style="display: block; margin: 0 auto;">
-
+We study for now random errors, as fixing system errors needs recalibration of the model. Assume the total summable change of uncertainties for the system $y$ to cause a random error (also referred to as causation of absolute error, raw uncertainty, and precision). In this case:
+    $$x+\sum \lim_{x \to a}a \approx y,$$
+This will imply the fact that:
+    $$\Delta y = x \pm \delta x$$
+where it is true that:
+    $$\delta x = \sum \lim_{x \to a},$$
+We can derive further non-trivial results, from the fact that:
+    $$\frac{dy}{dx}=\frac{\delta y}{\delta x} \wedge \delta x = \frac{1}{\frac{dy}{dx}}\delta y,$$
+but this will stretch the content outside of syllabus.
 </body>
 </html>
